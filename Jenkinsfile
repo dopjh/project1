@@ -11,7 +11,7 @@ node {
 	}
 	stage('Build') {
 		sh 'npm install'
-		sh 'npm run bowerInstall'
+		sh 'npm run bowerInstallDocker'
 	}
 	stage('Test') {
 		sh 'npm test'
