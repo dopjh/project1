@@ -11,7 +11,7 @@ node {
 	}
 	stage('Build') {
 		sh 'npm install'
-		sh './node_modules/.bin/bower install'
+		sh 'npm install -g bower'
 	}
 	stage('Test') {
 		sh 'npm test'
