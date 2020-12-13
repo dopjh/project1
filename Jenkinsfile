@@ -11,7 +11,7 @@ node {
 	}
 	stage('Build') {
 		sh 'npm install'
-		sh 'npm install -g bower'
+		sh 'npm install -g bower --allow-root'
 	}
 	stage('Test') {
 		sh 'npm test'
